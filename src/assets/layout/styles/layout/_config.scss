@@ -1,0 +1,41 @@
+.layout-config-button {
+  display: block;
+  position: fixed;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  background: var(--primary-color);
+  color: var(--primary-color-text);
+  text-align: center;
+  bottom: 1rem; /* Cambiamos 'top' a 'bottom' para que esté en la esquina inferior */
+  right: 1rem; /* Cambiamos 'right' para ajustar la distancia desde la derecha */
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: background-color var(--transition-duration);
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: -0.25rem 0 1rem rgba(0, 0, 0, 0.15);
+}
+
+.layout-config-button i {
+  font-size: 1rem;
+  line-height: inherit;
+  transform: rotate(0deg);
+  transition: transform 1s;
+}
+
+.layout-config-button:hover {
+  background: var(--primary-400);
+}
+
+.layout-config-sidebar {
+  &.p-sidebar {
+    .p-sidebar-content {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
